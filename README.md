@@ -1,6 +1,6 @@
 # idjswriter
 
-Tema untuk [Ghost](http://github.com/tryghost/ghost/).
+Tema untuk [Ghost](http://github.com/tryghost/ghost/) forking dari [Ghostwriter](http://roryg.github.io/ghostwriter).
 
 [Download](https://github.com/idjs/idjswriter/archive/master.zip)
 
