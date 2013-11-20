@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/nprogress.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic" />
-
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"/>
+    
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -30,9 +31,17 @@
                 <div class="site-title-wrapper">
                     <h1 class="site-title"><a class="js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a></h1>
 
-                    <a class="button-square js-ajax-link js-show-index" href="{{@blog.url}}"><span class="icon icon-menu"></span></a>
+                    <a class="button-square js-ajax-link js-show-index" href="{{@blog.url}}">
+                        <i class="fa fa-bars fa-inverse"></i>
+                    </a>
 
-                    <a class="button-square" href="{{@blog.url}}/rss"><span class="icon icon-rss"></span></a>
+                    <a class="button-square" href="{{@blog.url}}/rss">
+                        <i class="fa fa-rss fa-inverse"></i>
+                    </a>
+                    <!-- ubah ke url twitter -->
+                     <a class="button-square" href="https://twitter.com">
+                         <i class="fa fa-twitter fa-inverse"></i>
+                    </a>
                 </div>
             </div>
         </header>
@@ -46,11 +55,11 @@
         <div class="container">
             <div class="site-title-wrapper">
                 <h1 class="site-title"><a class="js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a></h1>
-
-                <a class="button-square button-jump-top js-jump-top" href="#"><span class="icon icon-up"></span></a>
+                <!-- rm button-jump-top js-jump-top -->
+                <a class="button-square" href="#"><i class="fa fa-arrow-up fa-inverse"></i></a>
             </div>
 
-            <p class="footer-copyright">&copy; {{date format="YYYY"}} / Powered by <a href="http://tryghost.org">Ghost</a> / Built by <a href="http://jollygoodthemes.com">JollyGoodThemes</a></p>
+            <p class="footer-copyright">&copy; {{date format="YYYY"}} / Powered by <a href="http://tryghost.org">Ghost</a> / Built by <a href="http://idjs.org">IDJS</a></p>
         </div>
     </footer>
 

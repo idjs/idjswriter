@@ -146,8 +146,9 @@ pre {
   background: #f03838;
   float: left;
   margin: 0 0 0 10px;
-  padding: 8px;
+  padding: 3px 8px;
 }
+
 .button-square:hover {
   background: #303030;
 }
@@ -320,7 +321,7 @@ pre {
 /* Icons */
 /* ============================================================ */
 .icon {
-  background: url(../images/sprite-28-76-2x.png) no-repeat;
+  
   background-size: 14px 38px;
   display: block;
   height: 38px;
