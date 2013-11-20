@@ -4,7 +4,7 @@
     {{#foreach posts}}
         <article class="{{post_class}}">
             <header class="post-header">
-                <h1 class="post-title">{{title}}</h1>
+                <h1 class="post-title"><a class="js-ajax-link"  title="{{title}}" href="{{url}}">{{{title}}}</a></h1>
 
                 <p class="post-date"><time datetime="{{published_at}}">Published {{date format="MMMM Do YYYY"}}</time></p>
             </header>
