@@ -1,24 +1,20 @@
 {{!< default}}
 
 <div id="latest-post" class="container">
+    {{! Each post will be output using this markup }}
     {{#foreach posts}}
-        {{#if @first}}
-            <article class="{{post_class}}">
-                <header class="post-header">
-                    <h1 class="post-title">{{title}}</h1>
 
-                    <p class="post-date"><time datetime="{{published_at}}">Published {{date format="MMMM Do YYYY"}}</time></p>
-                </header>
+    <article class="{{post_class}}">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
+            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
 
-                <div class="post-content">
-                    {{{content}}}
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip;</p>
+        </section>
+    </article>
 
-                    {{#if tags}}
-                        <p class="post-tags"><span>Tagged:</span> {{tags}}</p>
-                    {{/if}}
-                </div>
-            </article>
-        {{/if}}
     {{/foreach}}
 </div>
 
