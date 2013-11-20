@@ -2,23 +2,23 @@
 
 <div id="latest-post" class="container">
     {{#foreach posts}}
-        {{#if @first}}
-            <article class="{{post_class}}">
-                <header class="post-header">
-                    <h1 class="post-title">{{title}}</h1>
+        <article class="{{post_class}}">
+            <header class="post-header">
+                <h1 class="post-title"><a class="js-ajax-link"  title="{{title}}" href="{{url}}">{{{title}}}</a></h1>
 
-                    <p class="post-date"><time datetime="{{published_at}}">Published {{date format="MMMM Do YYYY"}}</time></p>
-                </header>
+                <p class="post-date"><time datetime="{{published_at}}">Published {{date format="MMMM Do YYYY"}}</time></p>
+            </header>
 
-                <div class="post-content">
-                    {{{content}}}
+            <div class="post-content">
+                <section class="post-excerpt">
+                    <p>{{excerpt}}&hellip;</p>
+                </section>
 
-                    {{#if tags}}
-                        <p class="post-tags"><span>Tagged:</span> {{tags}}</p>
-                    {{/if}}
-                </div>
-            </article>
-        {{/if}}
+                {{#if tags}}
+                    <p class="post-tags"><span>Tagged:</span> {{tags}}</p>
+                {{/if}}
+            </div>
+        </article>
     {{/foreach}}
 </div>
 
