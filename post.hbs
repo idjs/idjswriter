@@ -19,10 +19,21 @@
         </article>
         <div class="{{post_class}} social">
             <!-- Twitter -->
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{@blog.twitter}}" data-lang="id" data-size="large">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            
-            <!-- -->
+           <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{@blog.twitter}}" data-size="large">Tweet</a>
+           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+            <!-- Facebook -->
+            <!--
+            <a class="button-square" href="#"
+              onclick="
+                window.open(
+                  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+                  'facebook-share-dialog',
+                  'width=626,height=436');
+                return false;">
+              <i class="fa fa-facebook fa-inverse"> Facebook</i>
+            </a>
+            -->
         </div>
         <div id="disqus_thread" class="{{post_class}}"></div>
             <script type="text/javascript">
